@@ -1,8 +1,8 @@
 # Blocker and Matcher Can Mutually Benefit: A Co-Learning Framework for Low-Resource Entity Resolution
 
-This is the source code of CLER. CLER is an end-to-end iterative Co-learning framework for ER, aimed at jointly training the blocker and the matcher by leveraging their cooperative relationship.
+This is the source code of CLER. CLER is an end-to-end iterative Co-Learning framework for ER, aimed at jointly training the blocker and the matcher by leveraging their cooperative relationship.
 
-Our paper is submitted to VLDB 2024. 
+Our paper has been accepted by VLDB 2024. 
 
 ![Image text](https://github.com/wusw14/CLER/blob/master/figs/CLER.png)
 Figure (a) Illustration of the Co-learning between the blocker and the matcher in terms of information breadth and prediction accuracy. (b) The overview of our CLER framework in one training iteration, containing three steps (1) Data Annotation (2) Pseudo-labeling (3) Training.
@@ -134,7 +134,21 @@ python -u test_magellan.py --fp16 \
 python -u test_magellan.py --fp16 --total_budget 500 --gpu 0 --dataset FZ --topK 10 --run_id 0
 ```
 
-## Contact Information
+## Citation
+If you find our CLER model or the experimental results useful, please kindly cite the following paper:
+```
+@ARTICLE{wu2023blocker,
+  title={Blocker and Matcher Can Mutually Benefit: A Co-Learning Framework for Low-Resource Entity Resolution},
+  author={Wu, Shiwen and Wu, Qiyu and Dong, Honghua and Hua, Wen and Zhou, Xiaofang},
+  journal={Proceedings of the VLDB Endowment},
+  volume={17},
+  number={3},
+  pages={292-304},
+  year={2023}
+}
+```
+
+## Contact
 If you have any questions or feedback about this project, please feel free to contact us. We highly appreciate your suggestions!
 
 Email: swubs@connect.ust.hk  
